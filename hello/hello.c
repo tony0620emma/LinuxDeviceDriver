@@ -1,8 +1,9 @@
 #include <linux/init.h>
-#include <linux/module.h>
-#include <linux/sched.h>
+#include <linux/module.h> 
+#include <linux/sched.h>  /* struct task_struct *current */
 MODULE_LICENSE("GPLv3");
 
+/* return int for init function */
 static int hello_init(void)
 {
 	printk(KERN_ALERT "Hello, world!!\n");
